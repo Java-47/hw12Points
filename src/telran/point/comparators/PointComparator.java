@@ -17,7 +17,7 @@ public class PointComparator implements Comparator<Point> {
 				+ Math.pow(this.relPoint.getY() - o1.getY(), 2);
 		double distance2 = Math.pow(this.relPoint.getX() - o2.getX(), 2)
 				+ Math.pow(this.relPoint.getY() - o2.getY(), 2);
-		return (int) (distance1 - distance2);
+		return Double.compare(distance1, distance2);
 	}
 
 }
